@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/*Margenes*/
+body {
+  margin: 5px; }
+
+section {
+  margin: 10px; }
+
+/*Fonts*/
+h1 {
+  color: #ed3b89;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bolder;
+  font-size: large; }
+
+h2 {
+  color: #ed3b89;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: medium; }
+
+hr {
+  color: #ed3b89;
+  margin-bottom: 20px; }
+
+p {
+  color: grey;
+  font-style: normal;
+  font-weight: normal;
+  font-size: medium;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-transform: none;
+  line-height: normal;
+  text-decoration: none;
+  letter-spacing: normal; }
+
+ol {
+  color: #ed3b89;
+  font-family: 'Noto Sans JP', sans-serif;
+  list-style-type: none;
+  text-decoration: none; }
+
+ul {
+  color: #ed3b89;
+  font-family: 'Noto Sans JP', sans-serif;
+  list-style-type: none;
+  text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+/*Table*/
+table {
+  font-family: 'Noto Sans JP', sans-serif; }
+
+.tableTitles {
+  background-color: #ed3b89;
+  color: white;
+  text-align: center; }
+
+th {
+  background-color: #ed3b89;
+  color: white;
+  text-align: center;
+  padding: 5px; }
+
+tr {
+  padding: 10px;
+  text-align: center;
+  background-color: #f7f7f7; }
+
+td {
+  padding: 20px;
+  text-align: center; }
+
+/*Grid Index*/
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 200px 200px 300px 200px 200px;
+  grid-template-areas: "header header header"  "main main main" "main main main"   "main main main" "footer footer footer";
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-items: stretch;
+  align-items: stretch; }
+
+/*Estilos Header*/
+.header {
+  grid-area: header;
+  position: relative;
+  height: 100px;
+  display: flex;
+  align-items: center; }
+
+.headerImg {
+  position: relative;
+  width: 10%; }
+
+.headerTitle {
+  position: relative;
+  width: 20%; }
+
+.headerMenu {
+  position: relative;
+  width: 80%;
+  display: inline-block; }
+
+header section nav ul li {
+  display: inline-block;
+  padding-right: 30px; }
+
+/*Estilos Footer*/
+.footer {
+  grid-area: footer;
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.footerImg {
+  position: relative; }
+  .footerImg .footerImg_list {
+    display: inline-block;
+    justify-content: center;
+    align-items: center; }
+  .footerImg .footerImg_img {
+    margin-right: 30px; }
+
+.footerText {
+  position: relative;
+  text-align: center; }
+  .footerText .footerText__titulo {
+    font-size: 30px;
+    color: #585656; }
+  .footerText .footerText__parrafo {
+    font-size: 15px;
+    color: #868484; }
+
+.footerMenu {
+  position: relative;
+  background-color: #dddcdc; }
+  .footerMenu .footerMenu__nav {
+    display: flex; }
+  .footerMenu .footerMenu__navList {
+    list-style-type: none; }
+  .footerMenu .footerMenu__navtext {
+    display: inline-block;
+    padding-right: 30px; }
+  .footerMenu .footerMenu__navtext--activo {
+    background-color: #ed3b89;
+    color: white; }
+
+footer section ul li {
+  display: inline-block;
+  padding-right: 30px; }
+
+/*Estilos Main*/
+.main {
+  grid-area: main;
+  position: relative; }
+
+.mainIntro {
+  position: relative;
+  height: 650px;
+  background-image: url(https://cdn.pixabay.com/photo/2020/05/21/18/52/supermarket-5202138_960_720.jpg);
+  background-size: cover;
+  opacity: .75;
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+  overflow: hidden; }
+  .mainIntro .mainIntro__titulo {
+    color: #f01674;
+    font-size: 90px;
+    font-weight: bolder;
+    line-height: 160px; }
+  .mainIntro .mainIntro__parrafo {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px; }
+
+.mainTable {
+  position: relative; }
+
+.fuenteDescuentos {
+  color: #f01674;
+  font-size: 35px;
+  margin-left: 10px;
+  margin-top: 35px;
+  margin-bottom: 20px; }
+
+.fuenteSocios {
+  color: #f01674;
+  font-size: 35px;
+  margin-left: 10px;
+  margin-top: 35px;
+  margin-bottom: 20px; }
+
+/*Pruebas Bootstrap*/
+.fuentePrecios {
+  color: #ed3b89;
+  text-decoration: bolder;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px; }
+
+.navBar {
+  flex-direction: row; }
+
+.navMenu {
+  justify-content: flex-end; }
