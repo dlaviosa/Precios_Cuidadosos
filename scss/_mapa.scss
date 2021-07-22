@@ -1,0 +1,18 @@
+
+@mixin mapa( $colorLetra , $tamanioLetra , $colorFondo) {
+    color: $colorLetra;
+    font-size: $tamanioLetra;
+    background-color: $colorFondo;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mapaUno{
+    @include mapa(rgb(240, 22, 116), 15px , white)
+}
+
+.mapaDos{
+    @include mapa(white, 20px , grey)
+}

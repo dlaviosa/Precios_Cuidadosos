@@ -122,13 +122,16 @@ header section nav ul li {
   justify-content: center;
   flex-direction: column; }
 
-.footerImg {
-  position: relative; }
-  .footerImg .footerImg_list {
+.footerImg:hover {
+  position: relative;
+  display: inline-block;
+  transform: scale(1.5, 1.5);
+  transition: 2s; }
+  .footerImg:hover .footerImg_list {
     display: inline-block;
     justify-content: center;
     align-items: center; }
-  .footerImg .footerImg_img {
+  .footerImg:hover .footerImg_img {
     margin-right: 30px; }
 
 .footerText {
@@ -164,26 +167,29 @@ footer section ul li {
   grid-area: main;
   position: relative; }
 
+.mainVideo {
+  height: 600px; }
+
 .mainIntro {
+  display: flexbox;
   position: relative;
-  height: 650px;
-  background-image: url(https://cdn.pixabay.com/photo/2020/05/21/18/52/supermarket-5202138_960_720.jpg);
-  background-size: cover;
+  height: 800px;
   opacity: .75;
   text-align: center;
   padding-top: 100px;
   padding-left: 80px;
   padding-right: 80px;
   overflow: hidden; }
-  .mainIntro .mainIntro__titulo {
-    color: #f01674;
-    font-size: 90px;
-    font-weight: bolder;
-    line-height: 160px; }
-  .mainIntro .mainIntro__parrafo {
-    color: white;
-    font-weight: bolder;
-    font-size: 20px; }
+
+.mainIntro__titulo {
+  color: #f01674;
+  font-size: 60px;
+  font-weight: bolder; }
+
+.mainIntro__parrafo {
+  color: #747272;
+  font-weight: bolder;
+  font-size: 20px; }
 
 .mainTable {
   position: relative; }
@@ -216,3 +222,34 @@ footer section ul li {
 
 .navMenu {
   justify-content: flex-end; }
+
+.textoPromociones, .promocionesDos {
+  color: #f01674;
+  font-size: 20px;
+  background-color: #d8d8d8;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.promocionesDos {
+  background-color: #f01674;
+  color: white; }
+
+.mapaUno {
+  color: #f01674;
+  font-size: 15px;
+  background-color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.mapaDos {
+  color: white;
+  font-size: 20px;
+  background-color: grey;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }

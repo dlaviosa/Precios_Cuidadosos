@@ -1,0 +1,77 @@
+  /*Estilos Footer*/
+  
+  .footer{
+    grid-area: footer;
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .footerImg:hover{
+    position: relative;
+    display: inline-block;
+    transform: scale(1.5,1.5);
+    transition: 2s;
+
+    .footerImg_list{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .footerImg_img{
+        margin-right: 30px;
+    }
+
+    
+  }
+  
+    .footerText{
+    position: relative;
+    text-align: center;
+
+    .footerText__titulo{
+        font-size: 30px;
+        color: rgb(88, 86, 86);
+    }
+
+    .footerText__parrafo{
+        font-size: 15px;
+        color: rgb(134, 132, 132);  
+    }
+
+  }
+  
+      .footerMenu{
+    position: relative;
+    background-color: rgb(221, 220, 220);
+
+    .footerMenu__nav{
+        display: flex;
+    }
+
+    .footerMenu__navList{
+        list-style-type: none;
+    }
+
+    .footerMenu__navtext{
+        display: inline-block;
+        padding-right: 30px;
+    }
+
+    .footerMenu__navtext--activo{
+        background-color: rgb(237, 59, 137);
+        color: white;
+    }
+
+  }
+  
+      footer section ul li{
+    display: inline-block;
+    padding-right: 30px;
+      }
+  
+  
