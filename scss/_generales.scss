@@ -3,15 +3,9 @@
     padding: 0;
   }
   
-  /*Margenes*/
-  
-  body{
-    margin: 5px;
-  }
-  
-  section{
-    margin: 10px;
-  }
+.marginTop{
+  margin-top: 20px;
+}
 
    /*Fonts*/
   
@@ -32,7 +26,6 @@
   
   hr{
     color: rgb(237, 59, 137);
-    margin-bottom: 20px;
   }
   
   p{

@@ -3,11 +3,12 @@
   .footer{
     grid-area: footer;
     position: relative;
-    height: 300px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(248, 249, 250);
   }
   
   .footerImg:hover{
@@ -20,13 +21,7 @@
     display: inline-block;
     justify-content: center;
     align-items: center;
-    }
-
-    .footerImg_img{
-        margin-right: 30px;
-    }
-
-    
+    }   
   }
   
     .footerText{
@@ -47,7 +42,6 @@
   
       .footerMenu{
     position: relative;
-    background-color: rgb(221, 220, 220);
 
     .footerMenu__nav{
         display: flex;
@@ -59,19 +53,17 @@
 
     .footerMenu__navtext{
         display: inline-block;
-        padding-right: 30px;
     }
 
     .footerMenu__navtext--activo{
-        background-color: rgb(237, 59, 137);
-        color: white;
+
+        color: rgb(240, 22, 116);
     }
 
   }
   
       footer section ul li{
     display: inline-block;
-    padding-right: 30px;
       }
   
   

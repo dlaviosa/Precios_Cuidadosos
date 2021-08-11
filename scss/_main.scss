@@ -12,17 +12,17 @@
 
   .mainIntro{
   display: flex;
+  flex-direction: column;
   position: relative;
   height: 500px;
   background-image: url(https://cdn.pixabay.com/photo/2020/01/08/03/54/market-4749215_960_720.jpg); 
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  padding-top: 100px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-top: 30px;
+  margin-top: 20px;
+
   overflow: hidden;
   }
 
@@ -31,6 +31,7 @@
     color: rgb(240, 22, 116);
     font-size: 60px;
     font-weight: bolder;
+    text-align: center;
     }
 
   .mainIntro__parrafo{
@@ -38,32 +39,33 @@
         font-weight: bolder;
         font-size: 20px;
         background-color: rgb(240, 22, 116 );
+        text-align: center;
         opacity: .8;
     
     }
 
   .mainTable{
     position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .conoceSocios{
+    margin-top: 20px;
   }
   
     .fuenteDescuentos{
       color: rgb(240, 22, 116);
       font-size: 35px;
-      margin-left: 10px;
-      margin-top: 35px;
-      margin-bottom: 20px;
     }
     
     .fuenteSocios{
       color: rgb(240, 22, 116);
       font-size: 35px;
-      margin-left: 10px;
-      margin-top: 35px;
-      margin-bottom: 20px;
     }
 
     .imagenesSocios{
-      display: flex;
       position: relative;
       align-items: center;
       justify-content: center;
@@ -72,5 +74,6 @@
     .efectoImagenes:hover{
       transform: scale(1.25,1.25);
       transition: 1.5s;
+      
     }
     

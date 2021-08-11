@@ -1,10 +1,13 @@
   /*Estilos Header*/
     
       .headerVersionDos{
+        display: flex;
         position: relative;
         align-items: center;
         background-color: rgb(248, 249, 250);
-        justify-content: center;
-        padding: 15px;
       }
   
+      .push-right {
+        margin-left: auto;
+      }
+            

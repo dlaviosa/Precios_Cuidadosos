@@ -2,12 +2,8 @@
   margin: 0;
   padding: 0; }
 
-/*Margenes*/
-body {
-  margin: 5px; }
-
-section {
-  margin: 10px; }
+.marginTop {
+  margin-top: 20px; }
 
 /*Fonts*/
 h1 {
@@ -23,8 +19,7 @@ h2 {
   font-size: medium; }
 
 hr {
-  color: #ed3b89;
-  margin-bottom: 20px; }
+  color: #ed3b89; }
 
 p {
   color: grey;
@@ -65,16 +60,13 @@ table {
 th {
   background-color: #ed3b89;
   color: white;
-  text-align: center;
-  padding: 5px; }
+  text-align: center; }
 
 tr {
-  padding: 10px;
   text-align: center;
   background-color: #f7f7f7; }
 
 td {
-  padding: 20px;
   text-align: center; }
 
 /*Grid Index*/
@@ -90,21 +82,24 @@ td {
 
 /*Estilos Header*/
 .headerVersionDos {
+  display: flex;
   position: relative;
   align-items: center;
-  background-color: #f8f9fa;
-  justify-content: center;
-  padding: 15px; }
+  background-color: #f8f9fa; }
+
+.push-right {
+  margin-left: auto; }
 
 /*Estilos Footer*/
 .footer {
   grid-area: footer;
   position: relative;
-  height: 300px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #f8f9fa; }
 
 .footerImg:hover {
   position: relative;
@@ -115,8 +110,6 @@ td {
     display: inline-block;
     justify-content: center;
     align-items: center; }
-  .footerImg:hover .footerImg_img {
-    margin-right: 30px; }
 
 .footerText {
   position: relative;
@@ -129,22 +122,18 @@ td {
     color: #868484; }
 
 .footerMenu {
-  position: relative;
-  background-color: #dddcdc; }
+  position: relative; }
   .footerMenu .footerMenu__nav {
     display: flex; }
   .footerMenu .footerMenu__navList {
     list-style-type: none; }
   .footerMenu .footerMenu__navtext {
-    display: inline-block;
-    padding-right: 30px; }
+    display: inline-block; }
   .footerMenu .footerMenu__navtext--activo {
-    background-color: #ed3b89;
-    color: white; }
+    color: #f01674; }
 
 footer section ul li {
-  display: inline-block;
-  padding-right: 30px; }
+  display: inline-block; }
 
 /*Estilos Main*/
 .main {
@@ -156,50 +145,50 @@ footer section ul li {
 
 .mainIntro {
   display: flex;
+  flex-direction: column;
   position: relative;
   height: 500px;
   background-image: url(https://cdn.pixabay.com/photo/2020/01/08/03/54/market-4749215_960_720.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   text-align: center;
-  padding-top: 100px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-top: 30px;
+  margin-top: 20px;
   overflow: hidden; }
 
 .mainIntro__titulo {
   color: #f01674;
   font-size: 60px;
-  font-weight: bolder; }
+  font-weight: bolder;
+  text-align: center; }
 
 .mainIntro__parrafo {
   color: white;
   font-weight: bolder;
   font-size: 20px;
   background-color: #f01674;
+  text-align: center;
   opacity: .8; }
 
 .mainTable {
-  position: relative; }
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; }
+
+.conoceSocios {
+  margin-top: 20px; }
 
 .fuenteDescuentos {
   color: #f01674;
-  font-size: 35px;
-  margin-left: 10px;
-  margin-top: 35px;
-  margin-bottom: 20px; }
+  font-size: 35px; }
 
 .fuenteSocios {
   color: #f01674;
-  font-size: 35px;
-  margin-left: 10px;
-  margin-top: 35px;
-  margin-bottom: 20px; }
+  font-size: 35px; }
 
 .imagenesSocios {
-  display: flex;
   position: relative;
   align-items: center;
   justify-content: center; }
@@ -215,7 +204,8 @@ footer section ul li {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 25px; }
+  font-size: 25px;
+  font-weight: bolder; }
 
 .navBar {
   flex-direction: row; }
